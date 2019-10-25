@@ -3,7 +3,7 @@
 
 import math
 
-print("Pick a choice (please input corresonding number): \t1) Compounded Interest \n\t2) Continuous Interest")
+print("Pick a choice (please input corresonding number): \n\t1) Compounded Interest \n\t2) Continuous Interest")
 choice = int(input(">>> "))
 
 if(choice == 1):
