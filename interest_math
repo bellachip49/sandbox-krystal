@@ -1,0 +1,29 @@
+# !/usr/bin/env python
+# Compounded and Continuous Interest
+
+import math
+
+print("Pick a choice (please input corresonding number): \t1) Compounded Interest \n\t2) Continuous Interest")
+choice = int(input(">>> "))
+
+if(choice == 1):
+    print("Input value for P.")
+    p = int(input(">>> "))
+    print("Input value for r.")
+    r = float(input(">>> "))
+    print("Input value for n.")
+    n = int(input(">>> "))
+    print("Input value for t.")
+    t = int(input(">>> "))
+    answer = (p * (1 + (r / 2))^(n * t))
+    print("Answer: %.2f" % (answer))
+elif(choice == 2):
+    print("Input value for P.")
+    p = int(input(">>> "))
+    print("Input value for r.")
+    r = int(input(">>> "))
+    print("Input value for t.")
+    t = int(input(">>> "))
+    answer = (P * math.exp(r * t))
+else:
+    print("Invalid.")
